@@ -12,10 +12,12 @@ const HeaderRow = styled.div`
 const Row = styled.div`
   display: flex;
   gap: 6rem;
-  font-size: 20px;
+  font-size: 19px;
+  padding-top: 10px;
 `;
 const Button = styled.div`
   padding: 10px;
+  margin-top:-5px;
   background-color:var(--color-grey-200)
   color: white;
   border-radius: var(--border-radius-lg);
@@ -30,15 +32,14 @@ const Icons = styled.div`
   font-size: 30px;
   display: flex;
   gap: 20px;
-  padding-top: 10px;
 `;
 const Text = styled.p`
   font-weight: bold;
-  font-size: 20px;
+  font-size: 19px;
   cursor: pointer;
   transition: 0.5s;
   &:hover {
-    color: var(--color-brand-700);
+    color: var(--color-brand-500);
   }
 `;
 
