@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { HiMagnifyingGlass, HiOutlineShoppingCart } from "react-icons/hi2";
+import Button from "./Button";
 
 const HeaderRow = styled.div`
   display: flex;
@@ -15,19 +16,7 @@ const Row = styled.div`
   font-size: 19px;
   padding-top: 10px;
 `;
-const Button = styled.div`
-  padding: 10px;
-  margin-top:-5px;
-  background-color:var(--color-grey-200)
-  color: white;
-  border-radius: var(--border-radius-lg);
-  cursor: pointer;
-  &:hover {
-    background-color: var(--color-brand-500);
-    border-color: var(--color-brand-700); /* Change border color on hover */
-    color: white /* Change text color on hover */
-  }
-`;
+
 const Icons = styled.div`
   font-size: 30px;
   display: flex;
