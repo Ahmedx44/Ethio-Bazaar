@@ -6,7 +6,7 @@ const HeaderRow = styled.div`
   justify-content: space-between;
   font-size: 20px;
   padding: 30px;
-  background-color: var(--color-grey-50);
+  background-color: var(--color-grey-100);
   position: sticky;
 `;
 const Row = styled.div`
@@ -23,14 +23,23 @@ const Button = styled.div`
   &:hover {
     background-color: var(--color-brand-500);
     border-color: var(--color-brand-700); /* Change border color on hover */
-    color: var(--color-blue-600); /* Change text color on hover */
+    color: white /* Change text color on hover */
   }
 `;
 const Icons = styled.div`
   font-size: 30px;
   display: flex;
   gap: 20px;
-  padding-top: 5px;
+  padding-top: 10px;
+`;
+const Text = styled.p`
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    color: var(--color-brand-700);
+  }
 `;
 
 function Header() {
@@ -39,9 +48,9 @@ function Header() {
       <HeaderRow>
         <div>Ethio-Bazaar</div>
         <Row>
-          <p>Home</p>
-          <p>Shop</p>
-          <p>Contact</p>
+          <Text>Home</Text>
+          <Text>Shop</Text>
+          <Text>Contact</Text>
         </Row>
         <Row>
           <Icons>
