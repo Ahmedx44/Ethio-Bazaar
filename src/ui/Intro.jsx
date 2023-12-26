@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 const StyledTextImg = styled.div`
   position: relative;
   width: 65rem;
