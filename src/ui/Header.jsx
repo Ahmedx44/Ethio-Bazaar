@@ -36,7 +36,7 @@ const StyledImg = styled.div`
   background-image: url("src/data/pexels-francesco-ungaro-281260.jpg");
   /* Additional styling options (optional) */
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-size: cover;
   background-position: center;
 `;
