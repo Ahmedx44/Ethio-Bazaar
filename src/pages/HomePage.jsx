@@ -1,5 +1,11 @@
+import Intro from "../ui/intro";
+
 function HomePage() {
-  return <></>;
+  return (
+    <>
+      <Intro />
+    </>
+  );
 }
 
 export default HomePage;

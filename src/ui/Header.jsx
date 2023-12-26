@@ -40,16 +40,6 @@ const StyledImg = styled.div`
   background-size: cover;
   background-position: center;
 `;
-const StyledTextImg = styled.div`
-  position: relative;
-  width: 65rem;
-  top: 15rem;
-  left: 55rem;
-
-  font-size: 5rem;
-  color: var(--color-brand-50);
-  font-weight: bold;
-`;
 
 function Header() {
   return (
@@ -69,9 +59,7 @@ function Header() {
           <Button>Buy Now</Button>
         </Row>
       </HeaderRow>
-      <StyledImg>
-        <StyledTextImg> Browse Our Collection</StyledTextImg>
-      </StyledImg>
+      <StyledImg></StyledImg>
     </>
   );
 }
