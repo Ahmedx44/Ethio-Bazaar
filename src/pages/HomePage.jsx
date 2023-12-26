@@ -1,11 +1,5 @@
-import Header from "../ui/Header"
-
 function HomePage() {
-    return (
-        <>
-      <Header/>
-        </>
-    )
+  return <></>;
 }
 
-export default HomePage
+export default HomePage;
