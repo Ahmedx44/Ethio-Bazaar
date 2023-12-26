@@ -7,8 +7,9 @@ const HeaderRow = styled.div`
   justify-content: space-between;
   font-size: 20px;
   padding: 30px;
-  background-color: var(--color-grey-100);
+  background-color: var(--color-brand-50);
   position: sticky;
+  background-color
 `;
 const Row = styled.div`
   display: flex;
@@ -31,6 +32,24 @@ const Text = styled.p`
     color: var(--color-brand-500);
   }
 `;
+const StyledImg = styled.div`
+  background-image: url("src/data/pexels-francesco-ungaro-281260.jpg");
+  /* Additional styling options (optional) */
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+`;
+const StyledTextImg = styled.div`
+  position: relative;
+  width: 65rem;
+  top: 15rem;
+  left: 55rem;
+
+  font-size: 5rem;
+  color: var(--color-brand-50);
+  font-weight: bold;
+`;
 
 function Header() {
   return (
@@ -50,6 +69,9 @@ function Header() {
           <Button>Buy Now</Button>
         </Row>
       </HeaderRow>
+      <StyledImg>
+        <StyledTextImg> Browse Our Collection</StyledTextImg>
+      </StyledImg>
     </>
   );
 }
