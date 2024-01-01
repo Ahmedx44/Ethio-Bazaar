@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { HiMagnifyingGlass, HiOutlineShoppingCart } from "react-icons/hi2";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const HeaderRow = styled.div`
   display: flex;
@@ -32,14 +33,6 @@ const Text = styled.p`
     color: var(--color-brand-500);
   }
 `;
-const StyledImg = styled.div`
-  background-image: url("src/data/pexels-francesco-ungaro-281260.jpg");
-  /* Additional styling options (optional) */
-  width: 100%;
-  height: 550px;
-  background-size: cover;
-  background-position: center;
-`;
 
 function Header() {
   return (
@@ -47,8 +40,12 @@ function Header() {
       <HeaderRow>
         <div>Ethio-Bazaar</div>
         <Row>
-          <Text>Home</Text>
-          <Text>Shop</Text>
+          <Link to="/homepage">
+            <Text>Home</Text>
+          </Link>
+          <Link to="/products">
+            <Text>Shop</Text>
+          </Link>
           <Text>Contact</Text>
         </Row>
         <Row>
@@ -59,7 +56,6 @@ function Header() {
           <Button>Buy Now</Button>
         </Row>
       </HeaderRow>
-      <StyledImg></StyledImg>
     </>
   );
 }
