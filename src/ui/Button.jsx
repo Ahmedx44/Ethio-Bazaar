@@ -14,9 +14,8 @@ const StyledButton = styled.div`
   }
 `;
 
-function Button({ children }) {
-  return <StyledButton>{children}</StyledButton>;
-  //add
+function Buttonn({ children }) {
+  return <></>;
 }
 
-export default Button;
+export default Buttonn;
