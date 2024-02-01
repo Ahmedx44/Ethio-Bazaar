@@ -1,5 +1,5 @@
-function Products() {
-  return <div>Hellow</div>;
+function products() {
+  return <div></div>;
 }
 
-export default Products;
+export default products;
