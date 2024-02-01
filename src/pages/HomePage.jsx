@@ -1,5 +1,10 @@
+import Carousel from "../ui/Carousel";
 function HomePage() {
-  return <></>;
+  return (
+    <>
+      <Carousel />
+    </>
+  );
 }
 
 export default HomePage;
