@@ -25,7 +25,7 @@ function Header() {
         <Li>BLOG</Li>
         <Li>CONTACT</Li>
       </Navigate>
-      <Function className="text-6xl flex gap-5">
+      <Function className="text-6xl flex gap-5 ">
         <CiSearch />
         <IoPersonOutline />
         <FiShoppingCart />
