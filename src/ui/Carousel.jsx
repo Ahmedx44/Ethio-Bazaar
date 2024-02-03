@@ -11,6 +11,12 @@ import styled from "styled-components";
 
 const CarouselContainer = styled.div`
   position: relative;
+  max-height: 400px;
+  overflow: hidden;
+
+  @media (max-width: 615px) {
+    max-height: 300px; /* Decrease the max-height for screens 615 pixels or less */
+  }
 `;
 
 const NavigationButtons = styled.div`
@@ -27,37 +33,43 @@ const NavigationButtons = styled.div`
 `;
 
 const IMG = styled.div`
-  width: auto;
-  height: 80vh; /* Set the height to 50% of the viewport height */
+  width: 100%;
+  max-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    object-fit: cover;
+    object-position: bottom;
   }
 `;
 
 const ButtonBackk = styled.div`
-  background-color: rgba(128, 128, 128, 1); /* Grey color with 50% opacity */
-  /* Add other styling properties as needed */
+  background-color: rgba(107, 114, 128, 0.7);
+  padding: 20px;
 `;
+
 const ButtoNextt = styled.div`
-  background-color: rgba(128, 128, 128, 1); /* Grey color with 50% opacity */
-  /* Add other styling properties as needed */
+  background-color: rgba(107, 114, 128, 0.7);
+  padding: 20px;
 `;
+
 class Carousel extends React.Component {
   render() {
     return (
       <CarouselProvider
         naturalSlideWidth={100}
         naturalSlideHeight={125}
-        totalSlides={3}
+        totalSlides={2}
       >
         <CarouselContainer>
           <Slider>
             <Slide index={0}>
               <IMG>
                 <img
-                  src="../src/data/pexels-mikey-white-20003297 (1).jpg"
+                  src="../src/data/pexels-karolina-grabowska-4938510.jpg"
                   alt=""
                 />
               </IMG>
@@ -65,12 +77,11 @@ class Carousel extends React.Component {
             <Slide index={1}>
               <IMG>
                 <img
-                  src="../src/data/pexels-francesco-ungaro-281260.jpg"
+                  src="../src/data/pexels-gabriel-freytez-341523.jpg"
                   alt=""
                 />
               </IMG>
             </Slide>
-            <Slide index={2}>I am the third Slide.</Slide>
           </Slider>
           <NavigationButtons>
             <ButtonBackk>
